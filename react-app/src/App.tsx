@@ -26,7 +26,7 @@ function App() {
             </div>
             <h2>Two Way Binding Text Input</h2>
             <input id="my-input" type="text" placeholder="Enter text here" value={inputText} onChange={handleInputChange}/>
-            <p id="string-display">{inputText ? inputText : 'Initial value'}</p>
+            <p className="string-display">{inputText ? inputText : 'Initial value'}</p>
         </>
     )
 }
