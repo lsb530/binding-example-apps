@@ -1,4 +1,4 @@
-import {useState} from 'react'
+import {ChangeEvent, useState} from 'react'
 import kkobuki from './assets/kko.png'
 import './App.css'
 
@@ -6,9 +6,9 @@ function App() {
     const [count, setCount] = useState(0)
     const [inputText, setInputText] = useState('')
 
-    const handleInputChange = (event) => {
-        setInputText(event.target.value);
-    };
+    const handleInputChange = (event: ChangeEvent<HTMLInputElement>) => {
+        setInputText(event.target.value)
+    }
 
     return (
         <>
