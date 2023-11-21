@@ -20,7 +20,13 @@ document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
 `
 
 setupCounter(document.querySelector<HTMLButtonElement>('#counter')!)
-setupStringUpdate(
+// const { programmaticallyUpdate } =
+    setupStringUpdate(
     document.querySelector<HTMLInputElement>('#my-input')!,
     document.querySelector<HTMLParagraphElement>('#string-display')!
 )
+
+// 예시: 프로그래매틱 업데이트
+// setTimeout(() => {
+//     programmaticallyUpdate('프로그램에 의해 변경된 값');
+// }, 5000)
