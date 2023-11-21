@@ -1,5 +1,5 @@
 export function setupStringUpdate(inputElement: HTMLInputElement, displayElement: HTMLParagraphElement) {
-    let myString: string = inputElement.value || "Initial value"
+    let myString: string = inputElement.value || 'Initial value'
     // let myString: string = "Hellozzzaa"
 
     // 사용자의 입력에 의한 업데이트인지 프로그래마틱 업데이트인지 구분

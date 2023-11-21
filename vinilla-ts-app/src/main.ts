@@ -6,7 +6,7 @@ import {setupStringUpdate} from "./updateString.ts";
 document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
   <div>
     <a href="https://code-boki.tistory.com/" target="_blank">
-      <img src="${kkobuki}" class="logo" alt="Vite logo" />
+        <img src="${kkobuki}" class="logo" alt="Blog" />
     </a>
     <h1>Vite + TypeScript</h1>
     <h2>        from Boki</h2>
