@@ -1,24 +1,24 @@
 <div class="center">
   <a href="https://code-boki.tistory.com/" target="_blank">
-    <img src="/assets/kko.png" class="logo" alt="Blog" />
+    <img src="/assets/kko.png" class="logo" alt="Blog"/>
   </a>
   <h1>Vite + Angular</h1>
-  <h2>        from Boki</h2>
-  <div class="card">
-    <button id="counter" type="button" (click)="addCounter()">
-      count is {{count}}
-    </button>
-  </div>
-  <div class="card">
-    <h2>One Way Binding</h2>
-    <button type="button" (click)="changeLook()">
-      잘생겨지게 만들기
-    </button>
-    <h3 [ngStyle]="{'color': lookStyle()}">{{ look }}</h3>
-  </div>
-  <div class="card">
-    <h2>Two Way Binding Text Input</h2>
-    <input id="my-input" type="text" placeholder="Enter text here" [(ngModel)]="text"/>
-    <p class="string-display">{{text || 'Initial value'}}</p>
-  </div>
+  <h2> from Boki</h2>
+</div>
+<div class="card">
+  <button id="counter" type="button" (click)="addCounter()">
+    count is {{count}}
+  </button>
+</div>
+<div class="card">
+  <h2>One Way Binding</h2>
+  <button type="button" (click)="changeLook()">
+    잘생겨지게 만들기
+  </button>
+  <h3 [ngStyle]="{'color': lookStyle()}">{{ look }}</h3>
+</div>
+<div class="card">
+  <h2>Two Way Binding Text Input</h2>
+  <input id="my-input" type="text" placeholder="Enter text here" [(ngModel)]="text"/>
+  <p class="string-display">{{text || 'Initial value'}}</p>
 </div>
