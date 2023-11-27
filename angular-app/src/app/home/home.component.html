@@ -9,7 +9,16 @@
       count is {{count}}
     </button>
   </div>
-  <h2>Two Way Binding Text Input</h2>
-  <input id="my-input" type="text" placeholder="Enter text here" [(ngModel)]="text"/>
-  <p class="string-display">{{text || 'Initial value'}}</p>
+  <div class="card">
+    <h2>One Way Binding</h2>
+    <button type="button" (click)="changeLook()">
+      잘생겨지게 만들기
+    </button>
+    <h3 [ngStyle]="{'color': lookStyle()}">{{ look }}</h3>
+  </div>
+  <div class="card">
+    <h2>Two Way Binding Text Input</h2>
+    <input id="my-input" type="text" placeholder="Enter text here" [(ngModel)]="text"/>
+    <p class="string-display">{{text || 'Initial value'}}</p>
+  </div>
 </div>
